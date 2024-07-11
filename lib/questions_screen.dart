@@ -24,10 +24,6 @@ class _QuestionsScreen extends State<QuestionsScreen> {
           const SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {},
-            child: const Text('Answer1'),
-          ),
-          ElevatedButton(
-            onPressed: () {},
             child: const Text('Answer2'),
           ),
           ElevatedButton(
