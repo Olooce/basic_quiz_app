@@ -28,13 +28,11 @@ class _QuestionsScreen extends State<QuestionsScreen> {
           const SizedBox(height: 30),
           ...currentQuestion.answers.map((answer) {
             // ...(spreading)
-            return SizedBox(
-              height: 10,
-              child: AnswerButton(answer, onClick),
-            );
+            return AnswerButton(answer, onClick);
           })
         ],
       ),
     );
   }
 }
+answerString
