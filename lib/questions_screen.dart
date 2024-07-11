@@ -26,13 +26,13 @@ class _QuestionsScreen extends State<QuestionsScreen> {
                 color: Colors.white,
               )),
           const SizedBox(height: 30),
-          AnswerButton("Answer 1", onClick),
-          const SizedBox(height: 10),
-          AnswerButton("Answer 2", onClick),
-          const SizedBox(height: 10),
-          AnswerButton("Answer 3", onClick),
-          const SizedBox(height: 10),
-          AnswerButton("Answer 4", onClick),
+          ...currentQuestion.answers.map((answer) {
+            // ...(spreading)
+            return SizedBox(
+              height: 10,
+              child: AnswerButton(answer, onClick),
+            );
+          })
         ],
       ),
     );
