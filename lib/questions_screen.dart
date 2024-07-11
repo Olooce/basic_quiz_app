@@ -35,4 +35,3 @@ class _QuestionsScreen extends State<QuestionsScreen> {
     );
   }
 }
-answerString
