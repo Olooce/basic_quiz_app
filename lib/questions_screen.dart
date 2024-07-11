@@ -11,6 +11,7 @@ class QuestionsScreen extends StatefulWidget {
 }
 
 class _QuestionsScreen extends State<QuestionsScreen> {
+  void onClick() {}
   @override
   Widget build(context) {
     return SizedBox(
@@ -23,10 +24,10 @@ class _QuestionsScreen extends State<QuestionsScreen> {
                 color: Colors.white,
               )),
           const SizedBox(height: 10),
-         AnswerButton("Answer 1", onClick),
-         AnswerButton("Answer 2", onClick),
-         AnswerButton("Answer 3", onClick),
-         AnswerButton(("Answer 4", onClick),
+          AnswerButton("Answer 1", onClick),
+          AnswerButton("Answer 2", onClick),
+          AnswerButton("Answer 3", onClick),
+          AnswerButton("Answer 4", onClick),
         ],
       ),
     );
