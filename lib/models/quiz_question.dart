@@ -1,7 +1,6 @@
-// import 'package:flutter/material.dart';
+class QuizQuestion {
+  const QuizQuestion(this.text, this.answers);
 
-// class QuizQuestion extends StatefulWidget{
-//   Wideget build(context){
-//     return
-//   }
-// }
+  final String text;
+  final List<String> answers;
+}

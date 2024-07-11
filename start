@@ -1,0 +1,21 @@
+
+ * Waiting in queue... 
+ * Loading list of packages.... 
+The following packages have to be installed:
+ python3-ROPGadget-7.4-3.fc40.noarch	A tool to find ROP gadgets in program files
+ python3-capstone-5.0.1-3.fc40.noarch	Python3 bindings for capstone
+ python3-colored-traceback-0.3.0-9.fc40.noarch	A library to color exception traces
+ python3-intervaltree-3.1.0-12.fc40.noarch	A mutable, self-balancing interval tree for Python
+ python3-paramiko-3.4.0-3.fc40.noarch	SSH2 protocol library for python
+ python3-plumbum-1.7.2-8.fc40.noarch	Shell combinators library
+ python3-pwntools-4.11.1-7.fc40.noarch	A CTF framework and exploit development library
+ python3-pyasn1-0.5.1-3.fc40.noarch	ASN.1 tools for Python 3
+ python3-pyelftools-0.31-1.fc40.noarch	Pure-Python library for parsing and analyzing ELF files
+ python3-pygments-2.17.2-3.fc40.noarch	Syntax highlighting engine written in Python
+ python3-pyserial-3.5-8.fc40.noarch	Python serial port access library
+ python3-rpyc-5.1.0-8.fc40.noarch	Transparent, Symmetrical Python Library for Distributed-Computing
+ python3-sortedcontainers-2.4.0-15.fc40.noarch	Pure Python sorted container types
+ python3-unicorn-2.0.1.post1-5.fc40.x86_64	Files needed to develop applications using unicorn
+ unicorn-2.0.1.post1-5.fc40.x86_64	Lightweight multi-platform, multi-architecture CPU emulator framework
+The transaction did not proceed.
+
