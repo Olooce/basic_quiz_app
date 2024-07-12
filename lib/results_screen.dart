@@ -24,6 +24,9 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(context) {
+    final summaryData = getSummary();
+    final numQuestions = questions.length;
+    final numCorrect = summaryData.where(() {});
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -31,7 +34,7 @@ class ResultsScreen extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           const Text("You have answered 38756293756"),
           const SizedBox(height: 25),
-          QuestionsSummary(summary: getSummary()),
+          QuestionsSummary(summary: summaryData),
           const SizedBox(height: 25),
           TextButton(
             onPressed: () {},
