@@ -1,4 +1,4 @@
-import 'package:basic_quiz_app/answer_button.dart';
+import 'package:basic_quiz_app/widgets/answer_button.dart';
 import 'package:flutter/material.dart';
 import 'package:basic_quiz_app/data/questions.dart';
 
