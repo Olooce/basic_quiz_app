@@ -5,7 +5,9 @@ import 'package:basic_quiz_app/data/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class QuestionsScreen extends StatefulWidget {
-  const QuestionsScreen({super.key});
+  const QuestionsScreen({super.key, required this.onClick});
+
+  final void Function(String answer) onClick;
 
   @override
   State<QuestionsScreen> createState() {
@@ -14,6 +16,7 @@ class QuestionsScreen extends StatefulWidget {
 }
 
 class _QuestionsScreen extends State<QuestionsScreen> {
+  final List<String> selectedAnswers = [];
   var questionIndex = 0;
 
   void onClick() {
@@ -26,6 +29,10 @@ class _QuestionsScreen extends State<QuestionsScreen> {
         questionIndex = 0;
       });
     }
+  }
+
+  void storeAnswer(String answer) {
+    selectedAnswers.add(answer);
   }
 
   @override
