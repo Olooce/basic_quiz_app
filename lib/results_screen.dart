@@ -1,3 +1,4 @@
+import 'package:basic_quiz_app/questions_summary.dart';
 import 'package:flutter/material.dart';
 import 'package:basic_quiz_app/data/questions.dart';
 
@@ -30,7 +31,7 @@ class ResultsScreen extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           const Text("You have answered 38756293756"),
           const SizedBox(height: 25),
-          const Text("You have answered 38756293756"),
+          QuestionsSummary(summary: getSummary()),
           const SizedBox(height: 25),
           TextButton(
             onPressed: () {},
