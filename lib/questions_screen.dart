@@ -13,6 +13,7 @@ class QuestionsScreen extends StatefulWidget {
 
 class _QuestionsScreen extends State<QuestionsScreen> {
   var questionIndex = 0;
+
   void onClick() {
     if (questionIndex + 1 < questions.length) {
       setState(() {
@@ -31,7 +32,7 @@ class _QuestionsScreen extends State<QuestionsScreen> {
     return SizedBox(
       width: double.infinity,
       child: Container(
-        margin: const EdgeInsets.all(240),
+        margin: const EdgeInsets.all(150),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -44,10 +45,18 @@ class _QuestionsScreen extends State<QuestionsScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
-            ...currentQuestion.getShuffledAnswers().map((answer) {
-              // ...(spreading)
-              return AnswerButton(answer, onClick);
-            }),
+            ...currentQuestion.getShuffledAnswers().map(
+              (answer) {
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    AnswerButton(answer, onClick),
+                    const SizedBox(height: 15),
+                  ],
+                );
+              },
+            ),
           ],
         ),
       ),
