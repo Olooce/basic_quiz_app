@@ -19,16 +19,11 @@ class _QuestionsScreen extends State<QuestionsScreen> {
   var questionIndex = 0;
 
   void answerQuestion(String selectedAnswer) {
-    widget.onClick('...');
-    if (questionIndex + 1 < questions.length) {
-      setState(() {
-        questionIndex += 1;
-      });
-    } else {
-      setState(() {
-        questionIndex = 0;
-      });
-    }
+    widget.onClick(selectedAnswer);
+
+    setState(() {
+      questionIndex += 1;
+    });
   }
 
   @override
