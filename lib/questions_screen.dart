@@ -16,10 +16,10 @@ class QuestionsScreen extends StatefulWidget {
 }
 
 class _QuestionsScreen extends State<QuestionsScreen> {
-  final List<String> selectedAnswers = [];
   var questionIndex = 0;
 
-  void onClick() {
+  void answerQuestion(String selectedAnswer) {
+    widget.onClick('...');
     if (questionIndex + 1 < questions.length) {
       setState(() {
         questionIndex += 1;
@@ -29,10 +29,6 @@ class _QuestionsScreen extends State<QuestionsScreen> {
         questionIndex = 0;
       });
     }
-  }
-
-  void storeAnswer(String answer) {
-    selectedAnswers.add(answer);
   }
 
   @override
@@ -62,7 +58,9 @@ class _QuestionsScreen extends State<QuestionsScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    AnswerButton(answer, onClick),
+                    AnswerButton(answer, () {
+                      answerQuestion(answer);
+                    }),
                     const SizedBox(height: 15),
                   ],
                 );
