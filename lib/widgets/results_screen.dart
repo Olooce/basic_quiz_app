@@ -1,4 +1,4 @@
-import 'package:basic_quiz_app/widgets/questions_summary.dart';
+import 'package:basic_quiz_app/questions_summary/questions_summary.dart';
 import 'package:flutter/material.dart';
 import 'package:basic_quiz_app/data/questions.dart';
 
@@ -37,7 +37,7 @@ class ResultsScreen extends StatelessWidget {
           Text(
               "You have answered $numCorrect out of $numQuestions  questions correctly!,"),
           const SizedBox(height: 15),
-          QuestionsSummary(summary: summaryData),
+          QuestionsSummary(summaryData: summaryData),
           const SizedBox(height: 15),
           TextButton(
             onPressed: () {},
